@@ -1,0 +1,124 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        :root{
+            --fundo:#1b1b1b;
+            --cor-texto:#808080;
+            --cor-texto-2:#545454;
+            --cor-texto-3:#bfbfbf;
+        
+            --luz:#333;
+            --sombra:#0f0f0f;
+        
+            --gradiente-1: #0a0a0a;
+            --gradiente-2: #171717;
+        
+            --destaque-1: #f383be;
+            --destaque-2: #f3af5a;
+            
+            --branco: #ffffff;
+            --preto:#000000;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 32px;
+            overflow: hidden;
+            background: var(--fundo);
+            color: var(--cor-texto);
+            text-transform: lowercase;
+            overflow-y: scroll;
+            font-size: 16px;
+            font-family: 'Quicksand';
+        }
+
+        body::-webkit-scrollbar{
+            width: 0px;
+            border: none;
+        }
+
+        main{
+            margin: 1% 2%;
+            width: 50%;
+            box-shadow: -3px -3px 7px var(--luz), 3px 3px 5px var(--sombra);
+            border-radius: 8px;
+            flex-direction: row;
+            margin: 75px auto;
+        }
+
+        .cabecalho{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .apresentacao{
+            margin-top: 24px;
+            padding: 16px;
+        }
+
+        .saudacao{
+            font-size: 12px;
+        }
+
+        .nome{
+            font-size: 24px;
+            font-family: 'Shrikhand';
+        }
+
+        .sociais{
+            margin-top: 5%;
+        }
+
+        .sociais a{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            border-radius: 50px;
+            padding: 4px;
+            font-size: 16px;
+            color: var(--cor-texto-2);
+        }
+
+        .sociais a:hover{
+            color: var(--destaque-2);
+        }
+
+        .site{
+            background: var(--cor-texto-3)
+        }
+
+        .barras{
+            flex-direction: column;}
+
+        .barras a{
+            display: flex;
+            justify-content: space-around;
+            border-radius: 50px;
+            padding: 16px;
+            margin: 2.5% 4%;
+            font-size: 16px;
+            color: var(--cor-texto-2);
+            background: var(--fundo);
+            box-shadow: -3px -3px 7px var(--luz), 3px 3px 5px var(--sombra);
+        }
+
+        .barras a:hover{
+            background: linear-gradient(145deg, #0a0a0a, #171717);
+            box-shadow: inset 3px 3px 5px var(--sombra), inset -3px -3px 7px var(--luz);
+        }
+
+        .quebra{
+            margin-bottom: 56px;
+        }

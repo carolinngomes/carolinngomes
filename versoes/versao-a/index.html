@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<title>raysantori</title>
+
+    <meta charset="UTF-8"> <!-- caractere especial -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- adapta a outros dispositivos -->
+    
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Shrikhand&display=swap" rel="stylesheet">
+    
+
+    <style type="text/css" href=style.css>
+
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Shrikhand&display=swap');
+
+    body {
+        font-family:'Quicksand', sans-serif;
+        font-size=100%;
+        background:#ecf0ef;
+        text-decoration:none;
+        text-transform:lowercase;
+    }
+    
+    a {
+        color:#000;
+    }
+
+    a:hover {
+        color:#fdc94c;
+        transition:0.3s all;
+    }
+        
+    /* --- CABEÇALHO --- */     
+    .cabecalho {
+        position:fixed;
+        left:0px;
+        right:0px;
+        top:0px;
+        display:flex;  
+        justify-content:space-between;
+        background:#ffffff;
+        padding:15px;
+        border-bottom:0.6px solid #e7e7e7;
+        
+        align-items:center;
+        background:#ffffff;
+        text-transform:lowercase;
+        height:30px;
+    }  
+
+    .cabecalho-logo {
+        display:inline-block;
+        font-family:'Shrikhand', sans-serif;
+        font-size:24px;
+        color:#f383be;
+    }
+
+    .cabecalho-menu {
+        font-weight:bold;
+        display:flex;
+        gap: 23px;
+        align-items: center;
+    }
+
+    .cabecalho-link {
+        font-family:'Quicksand', sans-serif;
+        font-weight:400;
+        font-size:16px;
+        color:#000000;
+    }
+
+    #dsg {
+        border:2px solid #f383be;
+        padding:10px;
+        border-radius:20px;
+    }
+
+    #dsg:hover {
+        color:#000;
+        background-color:#f383be;
+        border:2px solid #f383be;
+        padding:10px;
+        border-radius:20px;
+    }
+
+    /* --- newsletter --- */
+
+    .news{
+        color:#000;
+        font-size:16px;
+        font-family:'Quicksand', sans-serif;
+        text-transform:lowercase;
+        font-weight:bold;
+        text-align: left;
+    }
+
+    .botao{
+        font-family:'Quicksand', sans-serif;
+        text-transform:lowercase;
+        font-size:11px;
+        background:#f383be;
+        opacity:0.8;
+        width:120px;
+        height:40px;
+        border:none;
+        box-shadow:4px 5px 4px #e7e7e7;
+        border-radius:20px;
+    }
+
+    form{
+        display:flex;
+        flex-direction:column;
+    }
+
+    input{
+        margin-right:20px;
+        border-radius:20px;
+        border:#e7e7e7 solid 0.2px;
+        font-size:11px;
+        padding:10px;
+    }
+
+    form [type="submit"]{
+        width:40%;
+        background-color:#f383be;
+        color:#fff;
+        font-weight:bold;
+    }
+
+    form [type="submit"]:hover{
+        cursor:pointer;
+    }
+
+    form [type="email"]{
+        width:75%;
+        margin-bottom:10px;
+    }
+
+
+    /* --- rodapé --- */
+
+    footer{
+        position:fixed;
+        right:0px;
+        left:0px;
+        bottom:27px;
+        width:100%;
+        background:#fff;
+        font-family:'Quicksand', sans-serif;
+    }
+
+    .rdpe{
+        display:flex;
+    }
+
+    .rodape .caixa{
+        padding:10px 20px;
+        flex-basis:50%;
+    }
+
+    .caixa .topico{
+        font-size:16px;
+        font-weight:600;
+        text-transform:lowercase;
+    }
+
+    .caixa .caixa{
+        margin:20px 0 0 0;
+    }
+
+    .uma .conteudo .sociais{
+        margin:20px 0 0 0;
+    }
+
+    .uma .conteudo p{
+        text-align:justify;
+    }
+
+    .uma .conteudo .sociais a{
+        padding:0.2px;
+    }
+
+    .duas .nav-list{
+    }
+
+    .tres .conteudo .info-contato{
+        margin:0.5px 0 0 0;
+    }
+
+    .rodape-logo {
+        display:inline-block;
+        font-family:'Shrikhand', sans-serif;
+        font-size:18px;
+        color:#f383be;
+    }
+    
+    .cw{
+        position:fixed;
+        left:0px;
+        right:0px;
+        bottom:0px;
+        display:flex;  
+        justify-content:center;
+        padding:2.5px;
+        border-top:2px solid #f383be;
+        font-family:'Quicksand', sans-serif;
+        font-weight:400;
+        font-size:10px;
+        color:#ffffff;
+        background:#f383be;
+    }
+
+    .wpp {
+        position:fixed;
+        height:45px;
+        width:45px;
+        line-height:50px;
+        right:40px;
+        bottom:20px;
+        text-align:center;
+        font-size:20px;
+        background:#fdc94c;
+        border-radius:50%;
+        z-index:10;
+    }
+
+    .wpp a {
+        text-transform:lowercase;
+        color:#000000;
+    }
+
+    </style>
+</head>
+<body>
+
+
+<!----------------------------------------------------------->   
+    <header class="cabecalho">
+        <span class="cabecalho-logo">raysantori</span>
+
+        <nav class="cabecalho-menu" style='text-align:right'>
+<a style="text-decoration:none" class="cabecalho-link" href="/inicio">início</a>
+<a style="text-decoration:none" class="cabecalho-link" href="/sobre">sobre</a>
+<a style="text-decoration:none" class="cabecalho-link" href="/servicos">serviços</a>
+<a style="text-decoration:none" class="cabecalho-link" href="/portifolio">portifólio</a>
+<a style="text-decoration:none" class="cabecalho-link" href="/ask">contato</a>
+<a style="text-decoration:none" class="cabecalho-link" id="dsg" href="/">doe</a>
+        </nav>
+        
+    </header>
+    
+    
+<!----------------------------------------------------------->    
+    <main>
+        
+    </main>
+    
+    
+<!----------------------------------------------------------->       
+    <footer class="rodape">
+    
+        <div class="rdpe"><!--conteúdo-->
+            
+            <div class="uma caixa">
+                <span class="rodape-logo">raysantori</span><!--logo-->
+                <div class="tt">
+                    <p>
+                        Lorem ipsum dolor sit amet. Sed galisum cupiditate et unde galisum nam nemo veniam id modi consectetur sed ipsam autem qui impedit similique! 
+                </p>
+                </div>
+                <div class="sociais">
+                    <a style="text-decoration:none" title="instagram"  href="https://www.instagram.com/raysantori"><span class="fi fi-brands-instagram"></span></a>
+                    
+                    <a style="text-decoration:none" title="youtube"  href="https://www.youtube.com/channel/UCzuJH2zxfhTcL0ahkkXnZUA"><span class="fi fi-rr-play-alt"></span></a>
+                    
+                    <a style="text-decoration:none" title="linkedin"  href="https://www.linkedin.com/in/raysantori"><span class="fi fi-brands-linkedin"></span></a>
+                </div>
+            </div>
+            
+            <div class="duas caixa">
+                <span class="topico">navegação</span></p>
+                
+                <div class="nav-list">
+                    <a style="text-decoration:none" class="nav-list" href="/inicio"><li>início</li></a>
+                    <li><a style="text-decoration:none" class="nav-list" href="/sobre">sobre</a></li>
+                    <li><a style="text-decoration:none" class="nav-list" href="/servicos">serviços</a></li>
+                    <li><a style="text-decoration:none" class="nav-list" href="/portifolio">portifólio</a></li>
+                    <li><a style="text-decoration:none" class="nav-list" href="/ask">contato</a></li>
+                    <li><a style="text-decoration:none" class="nav-list" href="/">doe</a></li>
+                </div>
+            </div>
+            
+            <div class="tres caixa">
+                <span class="topico">contato</span></p>
+                <div class="info-contato">
+                    <a style="text-decoration:none" href="tel:66999691956"><span class="fi fi-rr-phone-call"></span>ㅤ (66) 9 9969-1956</a></p>
+                
+                     <a style="text-decoration:none" href="mailto:contato@raysantori.com"><span class="fi fi-rr-envelope"></span>ㅤ contato@raysantori.com</a></p>
+                     
+                     <a style="text-decoration:none" href="https://goo.gl/maps/cAv8yY2patNy1eFH7"><span class="fi fi-rr-marker">ㅤ Aragarças-GO</a></span>
+                </div>
+            </div>
+            
+        <div class="quatro caixa">
+            <center><div class="news">
+                <span>Assine a minha newsletter</span></p>
+                <div class=descricao-news>
+                    
+                </div>
+                <form>
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="submit" value="Assinar">
+                </form>
+            </div></center>
+        </div>
+        </div>
+    </footer>
+    
+    
+<!----------------------------------------------------------->       
+<section>
+    <center>
+        <div class="cw" id="current_date"><b><script>date = new Date();year = date.getFullYear();day = date.getDate();month = date.getMonth() + 1;document.getElementById("current_date").innerHTML = "© " + year;</script></b> raysantori. Todos os direitos reservados.</p>
+        </div>
+    </center>
+</s
+ection>
+
+<!----------------------------------------------------------->   
+    <div class="wpp"><a  style="text-decoration:none" title="whatsapp" href="https://wa.me/5566999691956"><i class="fi fi-brands-whatsapp"></i></a></div>
+    
+</body>
+
+</html>

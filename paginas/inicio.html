@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f573a1"><!--cor do tema no chrome-->
+
+    <link rel="stylesheet" href="../arquivos/css/estilo.css"><!--estilo da página-->
+    <link rel="shortcut icon" href="../arquivos/midia/favicon.ico" type="image/x-icon"><!--favicon-->
+
+    <title translate="no">raysantori</title>
+    <meta name="author" content="Rayssa Gomes">
+    <meta name="description" content="raysantori desenvolve portifólios, landing pages e páginas na internet não só com muito estilo, como também com esquemas e interações mirabolantes que encantam usuários.">
+    <meta name="keywords" content="raysantori, rayssa gomes, site, website, web, ui designer, ux designer, designer, front-end, portifolio, landing-page, paginas, html, css, js, javascript">
+</head>
+<body>
+    <main>
+        <header>
+            <ul>
+                <li><a title="GitHub" target="_blank" href="https://github.com/raysantori"><i class="fi fi-brands-github"></i></a></li>
+                <li><a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/raysantori/"><i class="fi fi-brands-linkedin"></i></a></li>
+                <li><a title="YouTube" target="_blank" href="https://www.youtube.com/channel/UCzuJH2zxfhTcL0ahkkXnZUA"><i class="fi fi-brands-youtube"></i></a></li>
+            </ul>
+            <h1>raysantori</h1>
+            <a style="visibility: hidden;" href="#">Diga oi!</a>
+        </header>
+        <article id="habilidades">
+            <div class="barraCirc">
+                <div class="bC" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value:67"><strong>HTML</strong></div>
+            </div>
+            
+            <div class="barraCirc">
+                <div class="bC" role="progressbar" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100" style="--value:48"><strong>CSS</strong></div>
+            </div>
+
+            <div class="barraCirc">
+                <div class="bC" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--value:5"><strong>JS</strong></div>
+            </div>
+        </article>
+        <article id="sobre">
+            <h3>Oi, me chama de <strong>ray</strong><em>!</em></h3>
+            <p>
+                Sou desen&shy;volve&shy;dora <em>front-end</em> da web. No momento, trabalho com <mark>HTML, CSS e JavaScript</mark> para ela&shy;borar sites está&shy;ticos. Vez ou outra eu projeto porti&shy;fólios e landing pages de descon&shy;heci&shy;dos na internet. 
+            </p>
+            <p>
+                Inclu&shy;sive, a minha jornada na progra&shy;mação começou modi&shy;ficando os temas lá no tumblr, por volta de 2014, quando o estilo ainda era moda. Foi no tumblr que eu aprendi a usar HTML e CSS, futri&shy;cando e explo&shy;rando o máximo que dava para deixar o meu perfil o mais perso&shy;nali&shy;zado possível, já que ainda não conse&shy;guia começar do zero. Depois de alguns anos, eu decidi focar no front-end, entender ele não só como um passa&shy;tempo, como também uma carreira.
+            </p>
+            <!--<p>
+                Apesar disso, gente que é gente não vive só de trabalho. É por isso que eu amo me refu&shy;giar em meio ao romance, fanta&shy;siar com perso&shy;nagens que nunca vão existir, tomar um caldo de cana acom&shy;panha&shy;do de um pastelão, enquanto assisto um bom anime. Pensando nisso, o que acha de uma partida de xadrez?
+            </p>-->
+        </article>
+        <article id="img">
+            <img src="../arquivos/midia/foto-raysantori.webp" alt="">
+        </article>
+        <article id="form">
+            <form action="#">
+                <h3>Entre em contato:</h3>
+                <input type="text" name="name" class="input" placeholder="Seu Nome" required>
+                <input type="email" name="email" class="input" placeholder="seu@email.com" required>
+                <input type="text" name="assunto" class="input" placeholder="O que vamos falar?" required>
+                <textarea name="message" class="input" cols="30" rows="5" placeholder="Escreva sua mensagem aqui." required></textarea>
+                <button type="submit" class="btnPri"><i class="fi fi-rr-paper-plane"></i> Mandar mensagem</button>
+            </form>
+        </article>
+        <footer id="copy">
+            <script>
+                var copy = window.document.querySelector('#copy')
+                var agora = new Date()
+                var ano = agora.getFullYear()
+                copy.innerHTML = `&copy; ${ano} raysantori`
+            </script>
+        </footer>
+    </main>
+</body>
+</html>

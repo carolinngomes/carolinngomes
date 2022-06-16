@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#f383be"><!--cor do tema no chrome-->
+    
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="shortcut icon" href="../arquivos/midia/favicon.ico" type="image/x-icon">
+    
+        <title translate="no">raysantori</title>
+        <meta name="author" content="Rayssa Gomes" />
+        <meta name="description" content="Web designer">
+        <meta name="keywords" content="raysantori, website, designer, front-end, landing-page">
+    </head>
+<body>
+    <header>
+        <div class="cabSocial">
+            <ul>
+                <li><a title="GitHub" target="_blank" href="https://github.com/raysantori"><i class="fi fi-brands-github"></i></a></li>
+                <li><a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/raysantori/"><i class="fi fi-brands-linkedin"></i></a></li>
+                <li><a title="YouTube" target="_blank" href="https://www.youtube.com/channel/UCzuJH2zxfhTcL0ahkkXnZUA"><i class="fi fi-brands-youtube"></i></a></li>
+            </ul>
+        </div>
+        <a  style="opacity: 0;" href="inicio.html"><h1>raysantori</h1></a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <article>
+                <img src="../arquivos/midia/foto-perfil.png" alt="Foto de perfil">
+                <h2>oi, me chama de ray</h2>
+                <p>Desenvolvedora front-end da web</p>
+                <a href="#contato"><button class="btnPri"><i class="fi fi-rr-envelope"></i>Vamos conversar?</button></a>
+            </article>
+        </section>
+        <!--<section>
+            <h2>Serviços</h2>
+        </section>
+        <section>
+            <h2>Portifólio</h2>
+        </section>-->
+        <section id="sobre">
+            <aside class="esq"> 
+                <div class="cartao">
+                    <div class="frente">
+                        <p>passe o ponteiro aqui</p>
+                    </div>
+                    <div class="verso">
+                        <h2>Habilidades</h2>
+
+                        <div class="barraCirc">
+                            <div class="bC" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="--value:75"><strong>HTML</strong></div>
+                            <p>HTML é uma lin&shy;guag&shy;em de marcação uti&shy;liza&shy;da na cons&shy;tru&shy;ção de sites.</p>
+                        </div>
+                        
+                        <div class="barraCirc">
+                            <div class="bC" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--value:50"><strong>CSS</strong></div>
+                            <p>CSS é um meca&shy;nismo para adi&shy;cio&shy;nar estilo a uma página da web.</p>
+                        </div>
+
+                        <div class="barraCirc">
+                            <div class="bC" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="--value:5"><strong>JS</strong></div>
+                            <p>Java&shy;Script é uma lin&shy;gua&shy;gem de progra&shy;mação, de script em alto nível.</p>
+                        </div>
+            </aside>
+            <aside class="dir">
+                <h2>Quem é raysantori?</h2>
+                <p>
+                    Olá! Meu nome é <strong>Rayssa Gomes</strong>, eu tenho <span id="idade"></span> anos, sou desen&shy;volve&shy;dora front-end da web. No momento, brinco com HTML, CSS e JavaScript para ela&shy;borar sites está&shy;ticos. Vez ou outra eu projeto porti&shy;fólios e landing pages de descon&shy;heci&shy;dos na internet. Se você estiver lendo isso, prova&shy;velmente, eu já refa&shy;torei o seu código.
+                </p>
+                <p>
+                    Inclu&shy;sive, a minha jornada na progra&shy;mação começou assim; modi&shy;ficando os temas lá no tumblr, por volta de 2014, quando o estilo ainda era moda. Foi no tumblr que eu aprendi a usar HTML e CSS, futri&shy;cando e explo&shy;rando o máximo que dava para deixar o meu perfil o mais perso&shy;nali&shy;zado possível, já que ainda não conse&shy;guia começar do zero. Depois de alguns anos, eu decidi focar no front-end, entender ele não só como um passa&shy;tempo, como também uma carreira.
+                </p>
+                <p>
+                    Apesar disso, gente que é gente não vive só de trabalho. É por isso que eu amo me refu&shy;giar em meio ao romance, fanta&shy;siar com perso&shy;nagens que nunca vão existir, tomar um caldo de cana acom&shy;panha&shy;do de um pastelão, enquanto assisto um bom anime. Pensando nisso, o que acha de uma partida de xadrez?
+                </p>
+            </aside>
+        </section>
+        <!--<section>
+            <h2>Depoimentos</h2>
+        </section>-->
+        <section style="border-top: 1px solid var(--corDark2);" id="contato">
+            <div class="dupla">
+                <aside class="esq">
+                    <h2>Vamos trocar mensagens?</h2>
+                    <p>Gostou do meu trabalho e quer fazer um projeto comigo? Ficou com alguma dúvida ou quer saber de mais alguma coisa? Você tem duas opções:</p>
+                    <ol>
+                        <li>Preencher este simpático formulário,</li>
+                        <li>ou mandar um e-mail: <a style="color: var(--corWhite1);" href="mailto:contato@raysantori.com"><strong>contato@raysantori.com</strong></a></li>
+                    </ol>
+                </aside>
+                <aside class="dir">
+                    <form action="#">
+                        <input type="text" name="name" class="input" placeholder="Seu Nome" required>
+                        <input type="email" name="email" class="input" placeholder="seu@email.com" required>
+                        <input type="text" name="assunto" class="input" placeholder="O que vamos falar?" required>
+                        <textarea name="message" class="input" cols="30" rows="8" placeholder="Escreva sua mensagem aqui." required></textarea>
+                        <button type="submit" class="btnPri"><i class="fi fi-rr-paper-plane"></i> Mandar mensagem</button>
+                    </form>
+                </aside>
+            </div>
+        </section>
+
+    <div title="Voltar ao topo" id="voltaTop"><i class="fi fi-rr-arrow-small-up"></i></div>
+    </main>
+    <footer>
+        <div id="copy"></div>
+    </footer>
+
+    <script src="../arquivos/js/inicio.js"></script>
+</body>
+</html>

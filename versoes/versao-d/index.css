@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    /*paleta de cores*/
+    --cor-destaque: #a2d365;
+    --cor-secundaria: #000;
+    --cor-normal: #b1b0bc;
+
+    --cor-branco: #fff;
+    --cor-preto: #000;
+
+    --luz: #333;
+    --sombra: #0f0f0f;
+
+    --fundo: #1b1b1b;
+    
+    /*tipografia*/
+    --texto-destaque: 'UnifrakturMaguntia';
+    --texto-normal: 'Roboto Serif';
+
+    --tamanho-4: 64px;
+    --tamanho-3: 32px;
+    --tamanho-2: 16px;
+    --tamanho-texto: 12px;
+    --tamanho-1: 8px;
+    --tamanho-min: 4px;
+}
+
+::selection{
+    color: var(--cor-normal);
+    background: var(--fundo);
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--fundo);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--sombra);
+    border-radius: 24px;
+}
+
+.body {  display: grid;
+    grid-template-columns: 0.1fr 1.9fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 8px 8px;
+    grid-auto-flow: row;
+    grid-template-areas: ". . .";
+}
+
+/***************************************************************************/
+header{
+    height: 100vh;
+    background-size: cover;
+    background-image: url('https://images.unsplash.com/photo-1556792189-55769c8dfbac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80');
+    /*opacity: 0.9;*/
+}
+
+/***************************************************************************/
+.cabecalho{
+    height: 90vh;
+    justify-content: center;
+    padding: var(--tamanho-2);
+    margin: var(--tamanho-2);
+
+    background: rgba( 15, 15, 15, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 51, 51, 51, 0.18 );
+
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 0.3fr 1.5fr 1.2fr; 
+    grid-template-rows: 1fr; 
+    gap: 16px 16px; 
+    grid-template-areas: ". . ."; 
+}
+
+.cabecalho ul li{
+    list-style: none;
+    flex-direction: row;
+}
+
+.cabecalho ul li a{
+    color: var(--cor-normal);
+}
+
+.cabecalho ul li a:hover{
+    color: var(--cor-destaque);
+}
+
+.cabecalho .um{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px; 
+}
+
+.cabecalho .um i{
+    font-size: 24px;
+}
+
+.cabecalho .um a{
+    color: var(--cor-normal);
+}
+
+.cabecalho .um a:hover{
+    color: var(--cor-destaque);
+    transform:translateY(-5px);
+    transition: all 0.3s;
+}
+
+.letreiro{
+    width: 100%;
+    height: 5%;
+    background: var(--fundo);
+    color: var(--cor-normal);
+    border: 1px solid rgba( 51, 51, 51, 0.18 );
+    padding: 8px;
+}
+
+marquee{
+    font-size: var(--tamanho-texto);
+    font-family: var(--texto-normal);
+    word-spacing: var(--tamanho-1);
+}
+
+.cabecalho .dois{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 32px;
+    color: var(--cor-normal);
+}
+
+.cabecalho .dois p{
+    font-family: var(--texto-destaque);
+    font-size: 64px;
+    color: var(--cor-destaque);
+    -webkit-text-stroke-color: var(--luz);
+    -webkit-text-stroke-width: 1px;
+}
+
+.cabecalho .dois span{
+    font-family: var(--texto-normal);
+    font-size: 24px;
+}
+
+.cabecalho .botoes-dois button{
+    width: 184px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: var(--texto-normal);
+    border: 1px solid var(--cor-normal);
+    background: transparent;
+    color: var(--cor-normal);
+}
+
+.cabecalho .botoes-dois button:hover{
+    border: 1px solid var(--cor-destaque);
+    color: var(--cor-destaque);
+    transition: all 0.3s;
+}
+
+.cabecalho .botoes-dois a{
+    margin: 184px 40px;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: var(--texto-normal);
+    background: transparent;
+    color: var(--cor-normal);
+}
+
+.cabecalho .botoes-dois a:hover{
+    color: var(--cor-destaque);
+    transition: all 0.3s;
+    border-bottom: 1px solid var(--cor-destaque);
+}
+
+.cabecalho .prova-social-1{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.cabecalho .prova-social-1 .prova{
+    padding-right: 64px;
+}
+
+.copy {
+    width: 100%;
+    padding: 12px;
+    background: var(--luz);
+    color: var(--cor-normal);
+    text-align: center;
+    font-family: var(--texto-normal);
+    font-size: 10px;
+}

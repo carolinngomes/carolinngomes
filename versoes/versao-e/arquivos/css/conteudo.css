@@ -1,0 +1,243 @@
+header{
+    position: fixed;
+    width: 100vw; height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba( 54, 54, 54, 0.1 );
+    backdrop-filter: blur(6px);
+    z-index: 999;
+}
+
+.cabSocial ul li, nav ul li{
+    display: inline;
+    align-items: center;
+    padding: 4px;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+nav a,.cabSocial{
+    background: linear-gradient(-45deg, rgb(250, 71, 122), rgb(252, 215, 44));
+	background-size: 400% 400%;
+	animation: xGradiente 15s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+section,article{
+    width: 100vw; height: 100vh;
+}
+
+article{
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+}
+
+#inicio article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inicio img{
+    width: 200px; height: 200px;
+    padding: 5px;
+    border: 2px solid var(--corPri1);
+    border-radius: 50%;
+}
+
+#inicio{
+    background: url('../midia/fundo-inicio.jpg');
+    background-size: cover;
+}
+
+#sobre{
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 1.5fr 0.25fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". esq dir .";
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+#contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dupla {
+    display: grid;
+    grid-template-columns: 0.25fr 1.25fr 1.25fr 0.25fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". esq dir .";
+    gap: 64px;
+}
+
+#sobre h2{
+    text-align: center;
+}
+
+.esq,.dir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.esq{
+    grid-area: esq;
+    flex-direction: column;
+}
+
+.dupla .esq,.dupla .dir{
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+}
+
+.dupla.dir{
+    justify-content: center;
+}
+
+.esq ol{
+    padding: 16px;
+}
+
+.dir{
+    grid-area: dir;
+    flex-direction: column;
+}
+
+.dir p{
+    text-indent:4em;
+    text-align: justify;
+}
+
+.cartao {
+    width: 400px; height: 80vh;
+    perspective: 700px;
+}
+
+.frente, .verso {
+    position: absolute;
+    width: 100%; height: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 1s;
+}
+
+.frente {
+    padding: 0;
+    background: url('../midia/foto-raysantori.webp');
+    background-size: cover;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.frente p{
+    width: 100%; height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50% 50% 8px 8px;
+    background: linear-gradient(-45deg, rgba(250, 71, 122,0.75), rgba(252, 215, 44,0.75));
+	background-size: 400% 400%;
+	animation: xGradiente 15s ease infinite;
+    backdrop-filter: blur(2px);
+    color: var(--corWhite1);
+    text-transform: lowercase;
+    text-align: center;
+}
+
+.verso {
+    background: rgba(46, 49, 54, 1);
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    opacity: 0.9;
+}
+
+.cartao:hover .frente {
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+
+.cartao:hover .verso {
+    transform: rotateY(0);
+    z-index: 1;
+}
+
+.barraCirc{
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "graph txt";
+    padding: 16px;
+}
+
+.bC{
+    grid-area: graph;
+}
+
+.barraCirc p{
+    grid-area: txt;
+}
+
+.barraCirc strong{
+    color:var(--corWhite1);
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+  
+div[role="progressbar"]{
+    --pgPercentage: var(--value);
+    display: grid;
+    place-items: center;
+    width: 100px; height: 100px;
+    border-radius: 50%;
+    background: 
+        radial-gradient(closest-side, rgba(46, 49, 54, 1) 80%, transparent, transparent 90%),
+        conic-gradient(var(--corPri1) calc(var(--pgPercentage) * 1%), transparent 0);
+    animation: barraProgresso 3s 1 forwards;
+    color: var(--corPri1);
+}
+  
+div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+}
+
+#voltaTop{
+    position: fixed;
+    background: var(--corDark2);
+    border-radius: 50%;
+    padding: 8px 8px 0 8px;
+    bottom: 25px; right: 25px;
+    cursor: pointer;
+  }
+
+#copy{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, rgb(250, 71, 122), rgb(252, 215, 44));
+	background-size: 400% 400%;
+	animation: xGradiente 15s ease infinite;
+    color: rgba(255, 255, 255,0.5);
+    font-size: var(--tamSub);
+    text-transform: uppercase;
+    padding: 8px;
+}
