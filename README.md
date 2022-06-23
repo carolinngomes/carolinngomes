@@ -15,7 +15,7 @@ Sou desenvolvedora front-end da web. No momento, trabalho com HTML, CSS e JavaSc
   
 #
 
-Entre em contato se você tiver alguma dúvida ou proposta para mim:
+Se interessou pelo meu trabalho? Entre em contato comigo:
 
 <a href="mailto:contato@raysantori.com"><img src="https://img.shields.io/badge/contato@raysantori.com-0d1117?style=for-the-badge&logo=gmail&logoColor=white"></a>
 <a href="https://www.linkedin.com/in/raysantori/"><img src="https://img.shields.io/badge//raysantori-0d1117?style=for-the-badge&logo=linkedin&logoColor=white"></a>
