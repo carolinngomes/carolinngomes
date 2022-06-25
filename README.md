@@ -8,10 +8,6 @@
 </div>
 
 Sou desenvolvedora front-end da web. No momento, trabalho com <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> para elaborar sites estáticos. Vez ou outra, eu projeto portifólios e landing pages de desconhecidos na internet.
-
-#### Fatos aleatórios sobre mim:
-
-> Em breve.
   
 #
 
