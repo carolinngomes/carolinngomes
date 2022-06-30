@@ -223,7 +223,7 @@ section{
 
 @media only screen and (max-width:750px){
     section{
-        padding: 4rem 2rem;
+        padding: 4rem 2rem !important;
     }
 
     article ul{
@@ -252,6 +252,7 @@ section p{
 
 article ul{
     columns: 3;
+    color: var(--cor-primaria);
     list-style-type: '\3030\00a0\00a0\00a0\00a0\00a0';
     list-style-position: inside;
 }
