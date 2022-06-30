@@ -17,7 +17,7 @@
 
 /*id visual*/
 :root{
-    /*paleta de cores*/
+    /*paleta de cores
     --corPrimaria:#f573a1;
     --corSecundaria:#fcd72c;
     --corTerciaria:#21bf48;
@@ -30,9 +30,17 @@
     --darkClaro:#323232;
     --darkMedio:#202020;
     --darkEscuro:#181818;
-    --darkTotal:#000000;
+    --darkTotal:#000000;*/
+    --cor-primaria:rgb(245, 115, 161);
+    --cor-secundaria:rgb(252, 215, 44);
+    --cor-terciaria:rgb(33, 191, 72);
+    --cor-quartenaria:rgb(72, 33, 191);
+    --cor-fundo:#eee;
+    --cor-sobreposta:#fff;
+    --cor-conteudo-destaque:rgba(24, 24, 24);
+    --cor-conteudo:rgb(44, 44, 44);
 
-    /*tipografia*/
+    /*tipografia
     --fonteDestaque: 'OldLondon', 'Nunito', sans-serif;
     --fonteTxt:'Nunito', 'Nunito Sans', sans-serif;
 
@@ -48,7 +56,8 @@
     --tamTxt1:14pt;
     --tamTxt2:12pt;
 
-    --tamSub:11pt;
+    --tamSub:11pt;*/
+    --fonte-conteudo:'Nunito', 'Nunito Sans', sans-serif;
 }
 
 /*redefinir*/
@@ -63,16 +72,15 @@ html{
 }
 
 body{
-    background-color: var(--darkEscuro);
-    font-family: var(--fonteTxt);
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-conteudo);
     font-size: 16px;
-    color: var(--lightMedio);
+    color: var(--cor-conteudo);
 }
 
 /*seletor de texto*/
 ::selection{
-    background-color: var(--corTerciaria);
-    color: var(--darkEscuro);
+    background-color: var(--cor-primaria);
 }
 
 /*barra de rolagem*/
@@ -89,41 +97,43 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: var(--darkMedio);
+    background-color: var(--cor-primaria);
 }
 
-/*títulos*/
-/*h1 título*/
+/*títulos
 h1{
     color: var(--darkEscuro);
     font-size: 3rem;
     font-weight: 100;
     font-family: var(--fonteDestaque);
 }
-
-/*h2 tópico*/
 h2{
     font-size: var(--tamTtl2);
     text-transform: lowercase;
     padding: 16px 0;
 }
-
-/*h3*/
 h3{
     font-size: var(--tamTtl3);
 }
-
-/*h4*/
 h4{}
-
-/*h5*/
 h5{}
-
-/*h6 subtítulo*/
 h6{
-    font-size: var(--tamSub);}
+    font-size: var(--tamSub);
+}*/
 
-/*marca-texto*/
+h1,h2,h3,h4,h5,h6{
+    padding: 0 1rem;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+/*marca-texto
 a{
     color: var(--darkClaro);
 }
@@ -138,9 +148,22 @@ mark{
 	animation: xGradiente 15s ease infinite;
     color: var(--darkEscuro);
     font-weight: bold;
+}*/
+
+p{
+    padding: 1rem 0;
 }
 
-/*botões*/
+a{
+    color: var(--cor-conteudo);
+}
+
+a:hover{
+    color: var(--cor-primaria);
+    text-decoration: underline;
+}
+
+/*botões
 button{
     padding: 7pt 14pt;
     display: flex;
@@ -170,9 +193,9 @@ button.btnPri{
 	background-size: 400% 400%;
 	animation: xGradiente 15s ease infinite;
     color: var(--darkEscuro);
-}
+}*/
 
-/*entradas*/
+/*entradas
 input, textarea{
     width: 100%;
     padding: 16px;
@@ -183,4 +206,4 @@ input, textarea{
     color: var(--lightMedio);
     font-family: var(--fonteTxt);
     font-size: var(--tamTxt2);
-}
+}*/
