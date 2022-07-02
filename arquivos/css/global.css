@@ -4,6 +4,7 @@
 /*referência*/
 /*ícones*/
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
 
 /*tipografia*/
@@ -73,6 +74,21 @@ body{
     background-color: var(--cor-primaria);
 }
 
+/*marcação de texto**********/
+p{
+    padding: 1rem 0;
+}
+
+a{
+    color: var(--cor-conteudo);
+}
+
+a:hover{
+    color: var(--cor-primaria);
+    text-decoration: underline;
+}
+
+/*títulos*/
 h1,h2,h3,h4,h5,h6{
     color: var(--cor-conteudo-destaque);
     padding: 0 1rem;
