@@ -229,3 +229,15 @@ input, textarea{
     font-family: var(--fonteTxt);
     font-size: var(--tamTxt2);
 }*/
+
+/*rodapé*/
+footer{
+    background-color: var(--cor-sobreposta);
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+#copyright{
+    text-align: center;
+    text-transform: uppercase;
+}
