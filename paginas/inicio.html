@@ -13,6 +13,358 @@
     <meta name="author" content="Rayssa Gomes">
     <meta name="description" content="raysantori desenvolve portifólios, landing pages e páginas na internet não só com muito estilo, como também com esquemas e interações mirabolantes que encantam usuários.">
     <meta name="keywords" content="raysantori, rayssa gomes, site, website, web, ui designer, ux designer, designer, front-end, portifolio, landing-page, paginas, html, css, js, javascript">
+    
+    <style>
+*{
+    padding: 0; margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-conteudo);
+    font-size: 16px;
+    color: var(--cor-conteudo);
+}
+
+:root{
+    /*paleta de cores*/
+    --corPrimaria:#f573a1;
+    --corSecundaria:#fcd72c;
+    --corTerciaria:#21bf48;
+    --corQuartenaria:#4821bf;
+
+    --lightClaro:#ffffff;
+    --lightMedio:#B9B9B9;
+    --lightEscuro:#7C7C7C;
+
+    --darkClaro:#323232;
+    --darkMedio:#202020;
+    --darkEscuro:#181818;
+    --darkTotal:#000000;
+
+    /*tipografia*/
+    --fonteDestaque: 'OldLondon', 'Nunito', sans-serif;
+    --fonteTxt:'Nunito', 'Nunito Sans', sans-serif;
+
+    --tamTtl1:56pt;
+    --tamTtl2:32pt;
+    --tamTtl3:28pt;
+
+    --tamCab:20pt;
+    --tamSubCab:16pt;
+
+    --tamBtn:14pt;
+
+    --tamTxt1:14pt;
+    --tamTxt2:12pt;
+
+    --tamSub:11pt;
+}
+
+/*títulos*/
+h1{
+    color: var(--darkEscuro);
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: var(--fonteDestaque);
+}
+h2{
+    font-size: var(--tamTtl2);
+    text-transform: lowercase;
+    padding: 16px 0;
+}
+h3{
+    font-size: var(--tamTtl3);
+}
+h4{}
+h5{}
+h6{
+    font-size: var(--tamSub);
+}
+
+/*marca-texto*/
+a{
+    color: var(--darkClaro);
+}
+
+a:hover{
+    color: var(--lightEscuro);
+}
+
+mark{
+    background: linear-gradient(-45deg, #fcd72c,#21bf48);
+	background-size: 400% 400%;
+	animation: xGradiente 15s ease infinite;
+    color: var(--darkEscuro);
+    font-weight: bold;
+}*/
+
+p{
+    padding: 1rem 0;
+}
+
+a{
+    color: var(--cor-conteudo);
+}
+
+a:hover{
+    color: var(--cor-primaria);
+    text-decoration: underline;
+}
+
+/*botões*/
+button{
+    padding: 7pt 14pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    margin: 16px 0;
+    font-family: var(--fonteTxt);
+    font-size: var(--tamBtn);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover,button.btnPri:hover{
+    background: var(--lightClaro);
+    color: var(--darkEscuro);
+    transition: all 1s ease;
+}
+
+button i{
+    padding: 4px 16px 0 0;
+}
+
+button.btnPri{
+    background: linear-gradient(-45deg, #fcd72c,#21bf48);
+	background-size: 400% 400%;
+	animation: xGradiente 15s ease infinite;
+    color: var(--darkEscuro);
+}
+
+/*entradas*/
+input, textarea{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    margin: 4px;
+    background-color: var(--darkMedio);
+    color: var(--lightMedio);
+    font-family: var(--fonteTxt);
+    font-size: var(--tamTxt2);
+}
+
+main{
+    width: 100vw; height: 100vh;
+    display: grid;
+    grid-template-columns: 0.1fr 0.73fr 1.75fr 0.75fr 1fr 1fr 0.75fr 0.1fr;
+    grid-template-rows: 0.1fr 1.4fr 1.4fr 0.1fr;
+    grid-template-areas: 
+    "cab cab cab cab cab cab cab cab" 
+    ". hab sob img img frm frm ."  
+    ". hab sob img img frm frm ."  
+    ". hab sob img img frm frm ."  
+    "rdp rdp rdp rdp rdp rdp rdp rdp";
+}
+
+@media only screen and (max-width:500px){
+    main{
+        width: 100vw; height: auto;
+        display: grid;
+        grid-template-rows: 0.1fr 1fr 0.73fr 0.25fr 1fr 0.1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "cab"   
+        "img"
+        "sob"
+        "hab"  
+        "frm"  
+        "rdp";
+    }
+
+    header{
+        height: auto;
+    }
+
+    header ul li{
+        visibility: hidden;
+    }
+
+    #img img{
+        width: 100%;
+        border-radius: 8px !important;
+        margin: 25px auto;
+    }
+
+    #habilidades{
+        display: flex;
+    }
+
+    .barraCirc{
+        margin: 25px;
+    }
+
+    #form{
+        margin: 4%;
+    }
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(-45deg,#fcd72c,#21bf48);
+	background-size: 400% 400%;
+	animation: xGradiente 15s ease infinite;
+    grid-area: cab;
+}
+
+header h1{
+    cursor: default;
+}
+
+header ul{
+    text-decoration: none;
+}
+
+header li{
+    display: inline;
+}
+
+#habilidades{
+    grid-area: hab;
+    margin: auto;
+}
+
+.barraCirc{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "graph"
+    "txt";
+    padding: 25px 0;
+}
+
+.bC{
+    grid-area: graph;
+}
+
+.barraCirc strong{
+    color:var(--lightClaro);
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+  
+div[role="progressbar"]{
+    --pgPercentage: var(--value);
+    display: grid;
+    place-items: center;
+    width: 100px; height: 100px;
+    border-radius: 50%;
+    background: 
+        radial-gradient(closest-side, var(--darkEscuro) 80%, transparent, transparent 90%),
+        conic-gradient(var(--corTerciaria) calc(var(--pgPercentage) * 1%), transparent 0);
+    animation: barraProgresso 3s 1 forwards;
+    color: var(--corTerciaria);
+    background-color: var(--darkMedio);
+}
+  
+div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+}
+
+#sobre{
+    grid-area: sob;
+    margin: auto;
+}
+
+#sobre h3, #form h3{
+    font-size: 2rem;
+}
+
+#sobre strong{
+    background: linear-gradient(-45deg, #fcd72c,#21bf48);
+	background-size: 400% 400%;
+	animation: xGradiente 15s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color:var(--corTerciaria);
+    font-family: var(--fonteDestaque);
+    font-size: 3.25rem;
+    font-weight: 200;
+}
+
+#img{
+    grid-area: img;
+    margin: auto;
+}
+
+#img img{
+    width: 95%;
+    border-radius: 25% 8px 25% 8px;
+}
+
+#sobre p{
+    color: var(--lightMedio);
+    font-size: 16px;
+    text-align: justify;
+    text-indent: 4rem;
+    padding: 4px;
+}
+
+#habilidades,#sobre,#img,#form{
+    padding: 0 16px;
+}
+
+#form{
+    margin: auto;
+    grid-area: frm;
+}
+
+#voltaTop{
+    position: fixed;
+    background: var(--corDark2);
+    border-radius: 50%;
+    padding: 8px 8px 0 8px;
+    bottom: 25px; right: 25px;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    grid-area: rdp;
+}
+
+#copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg,#fcd72c,#21bf48);
+	background-size: 400% 400%;
+	animation: xGradiente 15s ease infinite;
+    color: var(--darkEscuro);
+    font-size: calc(16px - 25%);
+    text-transform: uppercase;
+    padding: 8px;
+    cursor: default;
+}
+    </style>
 </head>
 <body>
     <main>
