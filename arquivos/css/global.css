@@ -129,6 +129,10 @@ h1,h2,h3,h4,h5,h6{
     padding: 0 1rem;
 }
 
+:is(article) h1,h2,h3{
+    text-transform: uppercase;
+}
+
 h2{
     color: var(--cor-primaria);
     text-align: center;
@@ -150,9 +154,14 @@ h3{
     padding: 6rem 1rem 1rem 1rem;
 }
 
+h4{
+    color: var(--cor-conteudo);
+    padding: 4rem 2rem 0 2rem;
+}
 
-:is(article) h1,h2,h3,h4,h5,h6{
-    text-transform: uppercase;
+h4::before{
+    content: '#\00a0';
+    color: var(--cor-primaria);
 }
 
 /*marca-texto
