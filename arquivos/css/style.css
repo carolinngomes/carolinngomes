@@ -258,6 +258,7 @@ article ul{
 }
 
 article ul li{
+    text-transform: capitalize;
     padding: 1rem 2rem;
     border-bottom: 1px solid var(--cor-fundo);
 }
