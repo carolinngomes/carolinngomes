@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f573a1"><!--cor do tema no chrome-->
+
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon"><!--favicon-->
+
+    <title translate="no">raysantori</title>
+    <meta name="author" content="Rayssa Gomes">
+    <meta name="description" content="raysantori desenvolve portifólios, landing pages e páginas na internet não só com muito estilo, como também com esquemas e interações mirabolantes que encantam usuários.">
+    <meta name="keywords" content="raysantori, rayssa gomes, site, website, web, ui designer, ux designer, designer, front-end, portifolio, landing-page, paginas, html, css, js, javascript">
+    
+    <style>
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'OldLondon';
+    src: url('../fontes/OldLondon.ttf'), url('../fontes/OldLondonAlternate.ttf');
+}
+@font-face {
+    font-family: 'Seagram';
+    src: url('../fontes/Seagram\ tfb.ttf');
+}
+
+*{
+    padding: 0; margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-primaria:rgb(245, 115, 161);
+    --cor-secundaria:rgb(252, 215, 44);
+    --cor-terciaria:rgb(33, 191, 72);
+    --cor-quartenaria:rgb(72, 33, 191);
+    --cor-fundo:#eee;
+    --cor-sobreposta:#fff;
+    --cor-conteudo-destaque:rgba(24, 24, 24);
+    --cor-conteudo:rgb(44, 44, 44);
+    
+    --fonte-conteudo:'Nunito', 'Nunito Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-conteudo);
+    font-size: 16pt;
+    color: var(--cor-conteudo);
+}
+
+::selection{
+    background-color: var(--cor-primaria);
+}
+
+::-webkit-scrollbar{
+    width: 8px; height: 0;
+}
+
+::-webkit-scrollbar-track,::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-primaria);
+}
+
+a,a:hover{
+    color: var(--cor-primaria);
+}
+
+header a{
+    color: var(--cor-conteudo);
+}
+
+h1{
+    font-size: 24pt;
+    text-transform: uppercase;
+}
+
+footer{
+    background-color: var(--cor-sobreposta);
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+#copyright{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.flex-center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-spacebetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-spacebetween-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-center-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main{
+    width: 1000px;
+    background-color: var(--cor-sobreposta);
+    border-radius: 4px;
+    margin: 2% auto 2% auto;
+}
+
+header, section{
+    padding: 2% 6%;
+}
+
+header img{
+    width: 100px; height: 100px;
+    border-radius: 50%;
+}
+
+header img ~ div{
+    padding-left: 2rem;
+}
+
+header ul{
+    font-size: 11pt;
+    text-align: right;
+    list-style: none;
+}
+
+h3{
+    font-size: 12pt;
+    text-transform: uppercase;
+}
+
+header.aside-left{
+    width: 80%;
+}
+
+header.aside-right{
+    width: 20%;
+}
+
+section .aside-left,.inside-aside-left{
+    width: 200px;
+}
+
+section .aside-right,.inside-aside-right{
+    width: 100%;
+}
+
+.inside-aside-left{
+    font-size: 10pt;
+}
+
+#experience .inside-aside-left{
+    font-size: 10pt;
+    text-align: right;
+    padding: 0 3rem 0 0;
+}
+
+section ul{
+    font-size: 10pt;
+    padding: 1rem;
+}
+
+#experience ul{
+    columns: 2;
+}
+
+.width{
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <header class="flex-spacebetween-center" id="top">
+            <div class="aside-left flex-center-row">
+                <img src="../assets/images/foto-raysantori.webp" alt="Foto">
+                <div>
+                    <h1>Rayssa C. G. dos Santos</h1>
+                    <p>Desenvolvedora frontend da web</p>
+                </div>
+            </div>
+            <div class="aside-right">
+                <ul>
+                    <a href="tel:66999691956" target="_blank" rel="noopener noreferrer">
+                        <li>(66) 9 9969-1956</li>
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <li>Vila Ceará, Aragarças-GO</li>
+                    </a>
+                    <a href="mailto:contato@raysantori.com" target="_blank" rel="noopener noreferrer">
+                        <li>contato@raysantori.com</li>
+                    </a>
+                </ul>
+            </div>
+        </header>
+        <section class="flex-spacebetween" id="education">
+            <div class="aside-left">
+                <h3>Educação</h3>
+            </div>
+            <div class="aside-right flex-row">
+                <div class="inside-aside-left">
+                    <p>ago/2022 - ago/2027</p>
+                </div>
+                <div class="width">
+                    <div class="inside-aside-right">
+                        <h3>Bacharelado em Engenharia Civil</h3>
+                        <h6>Universidade Federal de Mato Grosso</h6>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flex-spacebetween" id="experience">
+            <div class="aside-left">
+                <h3>Cursos</h3>
+            </div>
+            <div class="width">
+                <div class="aside-right flex-row">
+                    <div class="inside-aside-left">
+                        <p>20h</p>
+                    </div>
+                    <div class="inside-aside-right">
+                        <h3>A arte de falar em público</h3>
+                        <h6>Aprenda mais</h6>
+                    </div>
+                </div>
+                <br>
+                <div class="aside-right flex-row">
+                    <div class="inside-aside-left">
+                        <p>40h</p>
+                    </div>
+                    <div class="inside-aside-right">
+                        <h3>HTML5 e CSS3: Módulo 1</h3>
+                        <h6>Curso em vídeo</h6>
+                    </div>
+                </div>
+                <br>
+                <div class="aside-right flex-row">
+                    <div class="inside-aside-left">
+                        <p>30h</p>
+                    </div>
+                    <div class="inside-aside-right">
+                        <h3>Projeto de sistemas web</h3>
+                        <h6>Aprenda mais</h6>
+                    </div>
+                </div>
+                <br>
+                <div class="aside-right flex-row">
+                    <div class="inside-aside-left">
+                        <p>2h</p>
+                    </div>
+                    <div class="inside-aside-right">
+                        <h3>Crie um site simples usando HTML, CSS e JavaScript</h3>
+                        <h6>Escola do trabalhador 4.0</h6>
+                    </div>
+                </div>
+                <br>
+                <div class="aside-right flex-row">
+                    <div class="inside-aside-left">
+                        <p>70h</p>
+                    </div>
+                    <div class="inside-aside-right">
+                        <h3>CC50: Introdução à Ciência da Computação</h3>
+                        <h6>Fundação Estudar</h6>
+                    </div>
+                </div>
+                <br>
+                <div class="aside-right flex-row">
+                    <div class="inside-aside-left">
+                        <p>40h</p>
+                    </div>
+                    <div class="inside-aside-right">
+                        <h3>JavaScript</h3>
+                        <h6>Curso em vídeo</h6>
+                    </div>
+                </div>
+                <br>
+                <div class="aside-right flex-row">
+                    <div class="inside-aside-left">
+                        <p>40h</p>
+                    </div>
+                    <div class="inside-aside-right">
+                        <h3>Princípios básicos do marketing digital</h3>
+                        <h6>Google</h6>
+                    </div>
+                </div>
+                <br>
+                <div class="aside-right flex-row">
+                    <div class="inside-aside-left">
+                        <p>136h</p>
+                    </div>
+                    <div class="inside-aside-right">
+                        <h3>Web designer avançado</h3>
+                        <h6>Microlins</h6>
+                        <ul>
+                            <li>Corel</li>
+                            <li>Photoshop</li>
+                            <li>Flash</li>
+                            <li>Dreamweaver</li>
+                            <li>Illustrator</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="aside-right flex-row">
+                    <div class="inside-aside-left">
+                        <p>3h</p>
+                    </div>
+                    <div class="inside-aside-right">
+                        <h3>Informática essencial</h3>
+                        <h6>Microlins</h6>
+                        <ul>
+                            <li>Windows7</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="aside-right flex-row">
+                    <div class="inside-aside-left">
+                        <p>217h</p>
+                    </div>
+                    <div class="inside-aside-right">
+                        <h3>Gerente de loja</h3>
+                        <h6>Microlins</h6>
+                        <ul>
+                            <li>Windows</li>
+                            <li>Word</li>
+                            <li>PowerPoint</li>
+                            <li>Excel</li>
+                            <li>Internet</li>
+                            <li>Administrativo</li>
+                            <li>Departamento pessoal</li>
+                            <li>Excrita fiscal</li>
+                            <li>Contábil</li>
+                            <li>Vendas e MKT no varejo</li>
+                            <li>Liderança e gestão de pessoas</li>
+                            <li>Vendas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lex-spacebetween-center" id="skills">
+            <div class="aside-left">
+                <h3>Habilidades</h3>
+            </div>
+            <div class="aside-right">
+                <h3></h3>
+                <p></p>
+            </div>
+        </section>
+        <section class="lex-spacebetween-center" id="qualities">
+            <div class="aside-left">
+                <h3>Educação</h3>
+            </div>
+            <div class="aside-right">
+                <h3></h3>
+                <p></p>
+            </div>
+        </section>
+    </main>
+    <script src="../assets/script/script.js"></script>
+</body>
+</html>
