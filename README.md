@@ -15,4 +15,4 @@ Sou desenvolvedora front-end da web. No momento, trabalho com <strong>HTML</stro
 
 <a href="mailto:contato@raysantori.com"><img src="https://img.shields.io/badge/contato@raysantori.com-1F2D52?style=for-the-badge&logo=gmail&logoColor=white"></a>
 <a href="https://www.linkedin.com/in/raysantori/"><img src="https://img.shields.io/badge//raysantori-1F2D52?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-<a href="https://www.youtube.com/channel/UCzuJH2zxfhTcL0ahkkXnZUA"><img src="https://img.shields.io/badge//raysantori-1F2D52?style=for-the-badge&logo=youtube&logoColor=white"></a>
+<a href="https://www.youtube.com/@raysantori"><img src="https://img.shields.io/badge//raysantori-1F2D52?style=for-the-badge&logo=youtube&logoColor=white"></a>
