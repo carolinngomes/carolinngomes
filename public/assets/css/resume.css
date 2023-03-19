@@ -1,5 +1,3 @@
-@import url(index.css);
-
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
@@ -41,7 +39,7 @@ html{
 body{
     background-color: var(--cor-fundo);
     font-family: var(--fonte-conteudo);
-    font-size: 16px;
+    font-size: 16pt;
     color: var(--cor-conteudo);
 }
 
@@ -65,57 +63,17 @@ body{
     background-color: var(--cor-primaria);
 }
 
-p{
-    padding: 1rem 0;
+a,a:hover{
+    color: var(--cor-primaria);
 }
 
-a{
+header a{
     color: var(--cor-conteudo);
 }
 
-a:hover{
-    color: var(--cor-primaria);
-    text-decoration: underline;
-}
-
-h1,h2,h3,h4,h5,h6{
-    color: var(--cor-conteudo-destaque);
-    padding: 0 1rem;
-}
-
-:is(article) h1,h2,h3{
+h1{
+    font-size: 24pt;
     text-transform: uppercase;
-}
-
-h2{
-    color: var(--cor-primaria);
-    text-align: center;
-}
-
-@media only screen and (max-width:750px){
-    h3{
-        padding: 1rem !important;
-    }
-}
-
-@media only screen and (max-width:500px){
-    h3{
-        padding: 1rem !important;
-    }
-}
-
-h3{
-    padding: 6rem 1rem 1rem 1rem;
-}
-
-h4{
-    color: var(--cor-conteudo);
-    padding: 4rem 2rem 0 2rem;
-}
-
-h4::before{
-    content: '#\00a0';
-    color: var(--cor-primaria);
 }
 
 footer{
@@ -124,7 +82,105 @@ footer{
     padding: 1rem;
 }
 
-#copyright{
+.footer{
     text-align: center;
     text-transform: uppercase;
+}
+
+.flex-center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-spacebetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-spacebetween-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-center-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main{
+    width: 1000px;
+    background-color: var(--cor-sobreposta);
+    border-radius: 4px;
+    margin: 2% auto 2% auto;
+}
+
+header, section{
+    padding: 2% 6%;
+}
+
+header img{
+    width: 100px; height: 100px;
+    border-radius: 50%;
+}
+
+header img ~ div{
+    padding-left: 2rem;
+}
+
+header ul{
+    font-size: 11pt;
+    text-align: right;
+    list-style: none;
+}
+
+h3{
+    font-size: 12pt;
+    text-transform: uppercase;
+}
+
+header.aside-left{
+    width: 80%;
+}
+
+header.aside-right{
+    width: 20%;
+}
+
+section .aside-left,.inside-aside-left{
+    width: 200px;
+}
+
+section .aside-right,.inside-aside-right{
+    width: 100%;
+}
+
+.inside-aside-left{
+    font-size: 10pt;
+}
+
+#experience .inside-aside-left{
+    font-size: 10pt;
+    text-align: right;
+    padding: 0 3rem 0 0;
+}
+
+section ul{
+    font-size: 10pt;
+    padding: 1rem;
+}
+
+#experience ul{
+    columns: 2;
+}
+
+.width{
+    width: 100%;
 }
