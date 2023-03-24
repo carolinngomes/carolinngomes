@@ -11,9 +11,26 @@ main, main > div > div:nth-child(2), .equation{
 }
 
 main > div{
-  width: 75%; 
   background-color: var(--boxColor);
-  padding: 5rem 15rem;
+}
+
+@media screen and (min-width: 769px){
+  main > div{ 
+    width: 75%;
+    padding: 5rem 15rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  main > div{
+    padding: 5rem 5rem;
+  }
+}
+
+@media screen and (max-width: 767px){
+  main > div{
+    padding: 5rem 2.5rem;
+  }
 }
 
 .equation{
