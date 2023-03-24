@@ -3,8 +3,8 @@ function firstDegreeEquation() {
     let coeffB = window.document.querySelector('#coeffB');
     let root = window.document.querySelector('#root');
 
-    let a = coeffA.value;
-    let b = coeffB.value;
+    var a = coeffA.value;
+    var b = coeffB.value;
 
     if (a != 0 && b != 0) { 
         // função afim
@@ -12,10 +12,14 @@ function firstDegreeEquation() {
     } else {
         if (a !=0 && b == 0) { 
             // função linear
-            var x = -b/a;
+            var x = 0;
         } else { 
-            // função constante
-            var x = b;
+            if (a == 0 && b != 0) {
+                // função constante
+                var x = b/1;
+            } else {
+                
+            }
         }
     }
 
