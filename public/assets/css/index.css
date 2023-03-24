@@ -1,130 +1,119 @@
-@import url('resources.css');
+@charset "UTF-8";
 
-@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
-@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
-@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+@import url('scrollbar.css');
+@import url('input.css');
+@import url('footer.css');
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @font-face {
-    font-family: 'OldLondon';
-    src: url('../fonts/OldLondon.ttf'), url('../fonts/OldLondonAlternate.ttf');
+  font-family: "OldLondon";
+  src: url("../fonts/OldLondon.ttf"), url("../fonts/OldLondonAlternate.ttf");
 }
 @font-face {
-    font-family: 'Seagram';
-    src: url('../fonts/Seagram\ tfb.ttf');
+  font-family: "Seagram";
+  src: url("../fonts/Seagram tfb.ttf");
 }
 
-*{
-    padding: 0; margin: 0;
-    text-decoration: none;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 :root{
-    --cor-primaria:rgb(245, 115, 161);
-    --cor-secundaria:rgb(252, 215, 44);
-    --cor-terciaria:rgb(33, 191, 72);
-    --cor-quartenaria:rgb(72, 33, 191);
-    --cor-fundo:#eee;
-    --cor-sobreposta:#fff;
-    --cor-conteudo-destaque:rgba(24, 24, 24);
-    --cor-conteudo:rgb(44, 44, 44);
-    
-    --fonte-conteudo:'Nunito', 'Nunito Sans', sans-serif;
+  --primaryColor:rgb(245, 115, 161);
+  --secondaryColor:rgb(252, 215, 44);
+  --tertiaryColor:rgb(33, 191, 72);
+  --quaternaryColor:rgb(72, 33, 191);
+  --backgroundColor:#eee;
+  --boxColor:#fff;
+  --titleColor:rgba(24, 24, 24);
+  --textColor:rgb(44, 44, 44);
+  --textFont:'Nunito', 'Nunito Sans', sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
+  font-size: 62, 5%;
 }
 
-body{
-    background-color: var(--cor-fundo);
-    font-family: var(--fonte-conteudo);
-    font-size: 16px;
-    color: var(--cor-conteudo);
+body {
+  background-color: var(--backgroundColor);
+  font-family: var(--textFont);
+  font-size: 16px;
+  color: var(--textColor);
 }
 
-::selection{
-    background-color: var(--cor-primaria);
-}
-
-::-webkit-scrollbar{
-    width: 8px; height: 0;
-}
-
-::-webkit-scrollbar-track,::-webkit-scrollbar-thumb{
-    border-radius: 8px;
-}
-
-::-webkit-scrollbar-track{
-    background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb{
-    background-color: var(--cor-primaria);
+h2, h4{
+  padding: 0.8rem 0;
 }
 
 p{
-    padding: 1rem 0;
+  text-indent: 2rem;
+  text-align: justify;
+  padding: 0.8rem 0;
 }
 
-a{
-    color: var(--cor-conteudo);
+ol, ul, li{
+  padding: 0.8rem 0 0.8rem 2.4rem;
+  text-align: justify;
 }
 
-a:hover{
-    color: var(--cor-primaria);
-    text-decoration: underline;
+/*
+p {
+  padding: 1rem 0;
 }
 
-h1,h2,h3,h4,h5,h6{
-    color: var(--cor-conteudo-destaque);
-    padding: 0 1rem;
+a {
+  color: var(--primaryColor);
 }
 
-:is(article) h1,h2,h3{
-    text-transform: uppercase;
+a:hover {
+  color: var(--primaryColor);
+  text-decoration: underline;
 }
 
-h2{
-    color: var(--cor-primaria);
-    text-align: center;
+h1, h2, h3, h4, h5, h6 {
+  color: var(--titleColor);
+  padding: 0 1rem;
 }
 
-@media only screen and (max-width:750px){
-    h3{
-        padding: 1rem !important;
-    }
+:is(article) h1, h2, h3 {
+  text-transform: uppercase;
 }
 
-@media only screen and (max-width:500px){
-    h3{
-        padding: 1rem !important;
-    }
+h2 {
+  color: var(--primaryColor);
+  text-align: center;
 }
 
-h3{
-    padding: 6rem 1rem 1rem 1rem;
+@media only screen and (max-width: 750px) {
+  h3 {
+    padding: 1rem !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  h3 {
+    padding: 1rem !important;
+  }
+}
+h3 {
+  padding: 6rem 1rem 1rem 1rem;
 }
 
-h4{
-    color: var(--cor-conteudo);
-    padding: 4rem 2rem 0 2rem;
+h4 {
+  color: var(--textColor);
+  padding: 4rem 2rem 0 2rem;
 }
 
-h4::before{
-    content: '#\00a0';
-    color: var(--cor-primaria);
+h4::before {
+  content: "# ";
+  color: var(--primaryColor);
 }
-
-footer{
-    background-color: var(--cor-sobreposta);
-    font-size: 1rem;
-    padding: 1rem;
-}
-
-.footer{
-    text-align: center;
-    text-transform: uppercase;
-}
+*/

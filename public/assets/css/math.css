@@ -1,0 +1,31 @@
+@import url('index.css');
+
+main{
+  background-color: var(--boxColor);
+}
+
+main, main > div > div:nth-child(2), .equation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > div{
+  width: 75%; 
+  background-color: var(--boxColor);
+  padding: 5rem 15rem;
+}
+
+.equation{
+  height: 20vh;
+  background-color: rgba(245, 244, 244, 0.5);
+  font-size: 1.6rem;
+  border: 10px var(--textColor) !important;
+  border-radius: 5px 5px 0 0;
+}
+
+#root{
+  height: 5vh;
+  text-align: center;
+  padding: 1.6rem;
+}

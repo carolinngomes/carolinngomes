@@ -1,0 +1,11 @@
+footer {
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.footer {
+  text-align: center;
+  text-transform: uppercase;
+}
