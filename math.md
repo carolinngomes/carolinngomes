@@ -11,7 +11,8 @@
 
 ## 🧩 Soluções
 
-<li><a href="https://raysantori.com/public/assets/pages/firstDegreeEquation.html">Calcule a raiz de uma equação afim</a></li>
+<li><a href="https://raysantori.com/public/assets/pages/firstDegreeEquation.html">Calcule a raiz de uma equação afim.</a></li>
+<li><a href="https://raysantori.com/public/assets/pages/secondDegreeEquation.html">Calcule a raiz de uma equação quadrática.</a></li>
 
 <br>
 
