@@ -17,8 +17,8 @@ input[type="number"]:nth-child(1){
     text-align: right;
 }
 
-input[type="number"]:nth-child(2){
-    text-align: left;
+input[type="number"]:nth-child(2),input[type="number"]:nth-child(3){
+    text-align: center;
 }
 
 input[type=number]::-webkit-inner-spin-button { 
