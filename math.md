@@ -17,7 +17,7 @@
 
 ## 🤝 Criadora
 
-Entre no mundo da inspiração e criatividade e conheça a mente por trás deste desafio: 
+Entre no mundo da inspiração e criatividade e conheça a mente por trás dessas soluções: 
 
 <br>
 
