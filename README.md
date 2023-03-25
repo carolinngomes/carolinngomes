@@ -7,11 +7,11 @@
   <img align="right" width="20%" src="https://i.ibb.co/DbRzQwm/ray-octocat-removebg-preview.png" alt="ray-octocat-removebg-preview" border="0">
 </div>
 
-Sou desenvolvedora front-end da web. No momento, trabalho com <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> para elaborar sites estáticos. Vez ou outra, eu projeto portifólios e landing pages de desconhecidos na internet.
+Como desenvolvedora front-end web, utilizo <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> para criar sites estáticos. Além disso, ocasionalmente ajudo desconhecidos na internet a desenvolverem seus portfólios e landing pages.
   
 #
 
-<strong>Se interessou pelo meu trabalho?</strong> Entre em contato comigo:
+<strong>Gostou do meu trabalho?</strong> Entre em contato comigo:
 
 <a href="mailto:contato@raysantori.com"><img src="https://img.shields.io/badge/email-1F2D52?style=for-the-badge&logo=gmail&logoColor=white"></a>
 <a href="https://www.linkedin.com/in/raysantori/"><img src="https://img.shields.io/badge/linkedin-1F2D52?style=for-the-badge&logo=linkedin&logoColor=white"></a>
