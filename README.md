@@ -11,9 +11,8 @@ Como desenvolvedora front-end web, utilizo <strong>HTML</strong>, <strong>CSS</s
   
 #
 
-<strong>Gostou do meu trabalho?</strong> Entre em contato comigo.<!--
-
+<strong>Gostou do meu trabalho?</strong> Entre em contato comigo.
+<!--
 <a href="mailto:contato@raysantori.com"><img src="https://img.shields.io/badge/email-1F2D52?style=for-the-badge&logo=gmail&logoColor=white"></a>
 <a href="https://www.linkedin.com/in/raysantori/"><img src="https://img.shields.io/badge/linkedin-1F2D52?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-<a href="https://wa.me/5566999691956"><img src="https://img.shields.io/badge/whatsapp-1F2D52?style=for-the-badge&logo=whatsapp&logoColor=white"></a>
--->
+<a href="https://wa.me/5566999691956"><img src="https://img.shields.io/badge/whatsapp-1F2D52?style=for-the-badge&logo=whatsapp&logoColor=white"></a>-->
